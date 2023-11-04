@@ -16,23 +16,62 @@
     <h2>Advising Appointment</h2>
     <div class="container">
         
-        <form>
+        <form method="get" action="thankyou.html">
             <fieldset>
                 <legend> Contact Information </legend>
-                <label for="fname"> 
+                <label class="labnam" for="fname"> 
                     Name:
-                    <input type="text" name="fname" id="fname"  autofocus placeholder="First Name">
+                    <input class="name" type="text" name="fname" id="fname"  autofocus required placeholder="First Name">
                 </label>
-                <label for="lname"> 
+                <label class="labnam"  for="lname"> 
                     Last Name:
-                    <input type="text" name="lname" required id="lname" placeholder="Last Name">
+                    <input class="name" type="text" name="lname" required id="lname" placeholder="Last Name">
                 </label>
-                <label for="email" >
+                <label class="labnam"  for="email" >
                     Email:
-                    <input type="email" name="email" required placeholder="Email" id="email">
+                    <input  class="name" type="email" name="email" required placeholder="Email" id="email">
                 </label>
              </fieldset> 
+             <fieldset>
+                <legend>Reservation Request</legend>
+               <select name="advisor">
+                     <option value="Ford">Tiffany Ford</option>
+                     <option value="Markley">Kirsten Markley</option>
+                    <option value="Lewis">Jackson Lewis</option>
+                    </select>
+                    <select name="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input id="day" type="number" name="day" min="1" max="31" step="1" value="1">
+                <label>
+                    AM
+                    <input type="radio" name="time" value="AM">  
+                </label>
+                <label>
+                    PM
+                    <input type="radio" name="time" value="PM">
+                </label>
+            
+              </fieldset>
+             <fieldset>
+                <legend>Classes You Want To Take Next Semester</legend>
+             </fieldset>
+             <fieldset>
+                <legend>Additonal Info</legend>
+             </fieldset>
             <input type="submit" value="Submit" class="submit">
+            
         </form>
 
     </div>

@@ -11,14 +11,14 @@
 
 /* Body Styles */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 .container {
     margin: auto;
     width: 80%;
-    background: linear-gradient(to right, rgb(255, 174, 0), rgba(255, 85, 0, 0.57));
+    background: linear-gradient(to right, rgba(255, 174, 0, 0.797), rgba(255, 85, 0, 0.57));
     padding: 25px;
     border-radius: 5px;
     margin-top: 5%;
@@ -33,13 +33,13 @@ legend {
 }
 /* Form Styles */
 
-label {
+.labnam {
     display: block;
     padding-bottom: 5px;
     position: relative;
 }
 
-input {
+.name {
     position: absolute;
     left: 15%;
     width: 60%;
@@ -48,3 +48,9 @@ input {
 .submit {
     width: initial;
 }
+
+#day {
+    max-width: 30px;
+    position: initial;
+}
+
