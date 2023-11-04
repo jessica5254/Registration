@@ -13,7 +13,7 @@
    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h2>Advising Appointment</h2>
+    <h2 class="int">Advising Appointment</h2>
     <div class="container">
         
         <form method="get" action="thankyou.html">
@@ -56,11 +56,11 @@
                 <input id="day" type="number" name="day" min="1" max="31" step="1" value="1">
                 <label>
                     AM
-                    <input type="radio" name="time" value="AM">  
+                    <input type="radio" name="ampm" value="AM">  
                 </label>
                 <label>
                     PM
-                    <input type="radio" name="time" value="PM">
+                    <input type="radio" name="ampm" value="PM">
                 </label>
             
               </fieldset>
@@ -68,27 +68,29 @@
                 <legend>Classes You Want To Take Next Semester</legend>
                 <label>
                     Java
-                    <input type="radio" name="Java" value="Java" >
+                    <input type="radio" name="java" value="on" >
                 </label>
                 <label>
                     C#
-                    <input type="radio" name="c#" value="c#" >
+                    <input type="radio" name="csharp" value="on" >
                 </label>
                 <label>
                     Web Dev
-                    <input type="radio" name="Web Dev" value="Web Dev" >
+                    <input type="radio" name="webdev" value="on" >
                 </label>
                 <label>
                     Database
-                    <input type="radio" name="Database" value="Database" >
+                    <input type="radio" name="Database" value="on" >
                 </label>
                 <label>
                     System Analysis &amp; Design
-                    <input type="radio" name="System Analysis & Design" value="System Analysis & Design" >
+                    <input type="radio" name="Sad" value="on" >
                 </label>
              </fieldset>
+                
              <fieldset>
                 <legend>Additonal Info</legend>
+                <textarea name="Addinfo" rows="8" cols="50" placeholder="Any Additional info"></textarea>
              </fieldset>
             <input type="submit" value="Submit" class="submit">
             

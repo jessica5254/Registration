@@ -22,6 +22,7 @@ body {
     padding: 25px;
     border-radius: 5px;
     margin-top: 5%;
+    padding-bottom: 40px;
 }
 /* Heading Styles */
 h2 {
@@ -30,6 +31,11 @@ h2 {
 }
 legend {
     font-size: 1.2em;
+}
+
+.int {
+    padding-left: 10%;
+    font-size: 2.5em;
 }
 /* Form Styles */
 
@@ -46,7 +52,9 @@ legend {
 }
 
 .submit {
-    width: initial;
+    width: 15%;
+    padding: 5px;
+    float: right;
 }
 
 #day {
